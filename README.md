@@ -19,17 +19,6 @@ Install the required Python packages:
 
 pip install streamlit pandas pillow h5py numpy scipy
 
-Directory Structure
-Make sure you have the following directory structure:
-
-
-.
-├── pytorch_VGG_1.py
-├── app.py
-├── VGG16Features_pytorch.h5  # Precomputed features and image names
-├── fashion-dataset/          # Directory containing fashion images
-├── README.md
-
 ## Running the Streamlit App
 Clone this repository:
 streamlit run streamlit.py
