@@ -20,10 +20,16 @@ Install the required Python packages:
 pip install streamlit pandas pillow h5py numpy scipy
 
 ## Running the Streamlit App
-Clone this repository:
+Clone this repository
+
 streamlit run streamlit.py
 
-Upload an image file and select how many similar images you'd like to retrieve. The system will then display the top similar images based on the selected option.
+## Using Docker
+docker pull mcanuff/cbir-app:latest
+
+docker run -p 8501:8501 mcanuff/cbir-app:latest
+
+
 ### HDF5 File
 The VGG16Features_pytorch.h5 file contains precomputed features of the images in the dataset. It is used for efficient image retrieval based on cosine similarity. Ensure that this file is in the same directory as the script.
 
